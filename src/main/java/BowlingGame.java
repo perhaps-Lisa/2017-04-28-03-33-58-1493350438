@@ -1,14 +1,4 @@
 public class BowlingGame {
-	public static void main(String[] args) throws IOException {
-		BowlingGame game = new BowlingGame();
-		
-		InputStreamReader isr = new InputStreamReader(System.in);
-		BufferedReader is = new BufferedReader(isr);
-		String score = is.readLine();
-		
-		game.getBowlingScore(score);
-	}
-
 	public int getBowlingScore(String bowlingCode) {
 		if( bowlingCode.isEmpty())
 			return -1;
